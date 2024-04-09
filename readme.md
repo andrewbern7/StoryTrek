@@ -8,7 +8,7 @@ This is a little brainchild of mine. Program focus is to create a random charact
 
 ## Contribution Ideas 
 If interested current expansion ideas
--Constructive crticism! I know I am an idiot and make stupid mistakes, always open to new ideas. Particularly, modularity, cleanliness, faster information handling, and ANYTHING regarding charater traits and storing them.
+- Constructive crticism! I know I am an idiot and make stupid mistakes, always open to new ideas. Particularly, modularity, cleanliness, faster information handling, and ANYTHING regarding charater traits and storing them.
 - Race/Nationality and assigning relevant First/Surnames whilst still remaining random
 
 # Main Focus
