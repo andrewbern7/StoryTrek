@@ -1,6 +1,4 @@
-import random
-from utils import basicAttr
-from characters import character
+from characters import character, physAttributes
 
 
 # def create_character():
@@ -11,11 +9,10 @@ from characters import character
 
 
 def main():
-    user = character.create_character()
-    print("Character: " + user.getName() + "\n")
-    print("Character Attributes:")
-    user.display_attributes()
-
+    person = character.create_character()
+    print("Character: " + person.getName())
+    person.display_attributes()
+    person.physical_Attributes.display_physAttributes()
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,13 @@
+race,skin_tone,likelihood
+African,Fair,0.20
+African,Medium,0.50
+African,Dark,0.30
+Asian,Pale,0.30
+Asian,Fair,0.50
+Asian,Medium,0.20
+European,Pale,0.30
+European,Fair,0.50
+European,Medium,0.20
+Latino,Pale,0.15
+Latino,Fair,0.50
+Latino,Medium,0.35

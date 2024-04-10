@@ -1,23 +1,27 @@
-from utils import basicAttr
+from characters import basicAttr, physAttributes
+from utils import InchtoFt
 import random
 
 
 class Character:
-    def __init__(self, firstname, lastname, gender, age, bday):
+    def __init__(self, firstname, lastname, gender, age, bday, height, weight, physical_attributes):
         self.firstname = firstname
         self.lastname = lastname
         self.gender = gender
         self.age = age
         self.birthday = bday
+        self.height = height
+        self.weight = weight
+        self.physical_Attributes = physical_attributes
 
     def getName(self):
         return f"{self.firstname} {self.lastname}"
 
     def getFirst(self):
-        return f"{self.firstname} {self.lastname}"
+        return f"{self.firstname}"
 
     def getLast(self):
-        return f"{self.firstname} {self.lastname}"
+        return f"{self.lastname}"
 
     def getBday(self):
         return self.birthday
@@ -25,15 +29,18 @@ class Character:
     def getAge(self):
         return self.age
     def display_attributes(self):
+        print(f"Character Attributes: ")
         print(f"Gender: {self.gender}")
         print(f"Age: {self.age}")
         print(f"Birthday: {self.birthday}")
+        print()
+
 
 def generateRandomBirthday(age):
     current_year = 2500
     year_of_birth = current_year - age
 
-    months = list(range(1, 13))  # 1 to 12 for January to December
+    months = list(range(1, 13))
     days_in_month = {
         1: 31,  # January
         2: 28,  # February (assuming non-leap year)
@@ -56,14 +63,20 @@ def generateRandomBirthday(age):
     birth_day = random.randint(1, days_in_month[birth_month])
     bday = str(birth_month) + "/" + str(birth_day) + "/" + str(year_of_birth)
     return bday
+
+
 def generateAge():
-    age = random.randint(13, 90)
+    age = random.randint(18, 90)
     return age
 
+
 def create_character():
-    firstname, lastname, gender = basicAttr.getNameGender()
+    firstname, lastname, gender = basicAttr.setNameGender()
     age = generateAge()
     bday = generateRandomBirthday(age)
-
-    person = Character(firstname, lastname, gender, age, bday)
+    height, weight = physAttributes.setHeightWeight(gender)
+    race = random.choice(["African", "European", "Asian", "Latino"])
+    eye_color, hair_color, hair_style, skin_tone = physAttributes.randGenAttributes(gender, race)
+    physical_attributes = physAttributes.PhysicalAttributes(race, height, weight, eye_color, hair_color, hair_style, skin_tone)
+    person = Character(firstname, lastname, gender, age, bday, height, weight, physical_attributes)
     return person

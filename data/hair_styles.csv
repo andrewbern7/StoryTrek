@@ -1,0 +1,8 @@
+gender,hair_style,likelines
+Any,Short Hair,0.3
+Any,Medium Length,0.4
+Any,Long Hair,0.2
+Male,Bald,0.2
+Female,Ponytail,0.4
+Female,Bob Cut,0.3
+Female,Braids,0.2

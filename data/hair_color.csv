@@ -1,0 +1,12 @@
+race,hair_color,likelihood
+African,Brown,0.10
+African,Black,0.90
+Asian,Blonde,0.05
+Asian,Brown,0.15
+Asian,Black,0.80
+European,Blonde,0.25
+European,Brown,0.40
+European,Black,0.25
+European,Red,0.10
+Latino,Brown,0.30
+Latino,Black,0.70
