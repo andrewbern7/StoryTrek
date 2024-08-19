@@ -12,10 +12,11 @@ If interested current expansion ideas
 - Race/Nationality and assigning relevant First/Surnames whilst still remaining random
 
 # Main Focus
-To create an application that generates meaningful family trees that allow the easy weaving of Sci-Fi stories (A framework). 
+To create an application that generates meaningful family trees that allow the easy weaving of Sci-Fi stories focused(A framework). 
+  - IF this is achieved, I would like to make a datapack that allows users to load/save custom packs with different themes
 
 ### Current Ideas
 - While the theme is Sci-Fi I think it's important to prioritize functionality over features.
   - Biggest drawback, characters will only be human
-  - I plan to procedural generate a backstory with the ID with traits that can be derived from experiences in one's backstory. ** BIG MAYBE ** , I am and idiot and worry procedural narrative geration will  be too hard to make and enjoyable experience to look with some level of randomness.
+  - I plan to procedural generate a backstory with the ID with traits that can be derived from experiences in one's backstory. ** BIG MAYBE ** , I am and idiot and worry procedural narrative generation will  be too hard to make an enjoyable experience to look with some level of randomness.
   - Make a license template to display the data to user. Use GPT-4 to generate a image of the character based off their traits.
